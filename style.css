@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#gameboard {
+  background: rgb(0,0,0);
+  margin: auto;
+  padding: 0;
+  width: 70vw;
+  height: 100vh;
+  /*align-content: center;*/
+}
+
+.board {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto auto 0 auto;
+  max-height: 100vh;
+  /*background: url("board.jpg") no-repeat;*/
+}
+
+/*div#gameboard {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background: url("board.jpg") no-repeat;
+}*/
+
+table {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+td {
+  color: green;
+  margin: 0;
+  padding: 0;
+  border: 2px solid green;
+  width: 4.8vw;
+  height: 4.8vw;
+  text-align: right;
+  font-size: 2em;
+  }
+
+.td-nb {
+  border: 0px solid green;
+}
+
+.numrow {
+  text-align: center;
+  vertical-align: text-top;
+}
+
+form {
+  position: absolute;
+  background: green;
+  border: 5px solid green; 
+  bottom: 1em;
+  right: 30vw;
+}
+
+form input {
+  background: rgb(152, 207, 113);
+  border-color: rgb(83,175,19);
+  font-size: 1em;
+}
+
+.radars div {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.8vw solid rgb(48, 79, 9, 30%);
+  border-radius: 50%;
+}
+
+.radar1 {
+  width: 38vw;
+  height: 38vw;
+}
+
+.radar2 {
+  width: 28vw;
+  height: 28vw;
+}
+
+.radar3 {
+  width: 16vw;
+  height: 16vw;
+}
+
+.radar4 {
+  width: 10vw;
+  height: 10vw;
+}
+
+.detector {
+  position: absolute;
+  top:50%;
+  left: 49.6%;
+  transform: translate(-8vw, 8.0vw); 
+  border-radius: 50%;
+  height: 19.75vw;
+  width: 0.8vw;
+  border-color: 5vw solid rgb(54,96,10)
+  box-shadow: 0 0 5vw rgb(54,96,10);
+  background-color: rgb(54,96,10, 20%);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-timing-function: linear;
+    animation-duration: 4s;  /*4s*/
+    transform-origin: top center; /*0.4vw 0vw;*/
+}
+
+
+@keyframes orbit{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {transform: rotate(360deg);}
+}
+
+
+.hit {
+  background: url("explotion.png") no-repeat center center;
+}
+
+.miss {
+  /*background: url("miss.png") no-repeat center center;*/
+  color: blue;
+  text-align: center;
+}
+
+#messageBox {
+  color: green;
+  font-size: 2em;
+}
+#messageBox2 {
+  color: green;
+  font-size: 2em;
+}
