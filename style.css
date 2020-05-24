@@ -110,7 +110,7 @@ form input {
   border-radius: 50%;
   height: 19.75vw;
   width: 0.8vw;
-  border-color: 5vw solid rgb(54,96,10)
+  border-color: 5vw solid rgb(54,96,10);
   box-shadow: 0 0 5vw rgb(54,96,10);
   background-color: rgb(54,96,10, 20%);
     animation-iteration-count: infinite;
